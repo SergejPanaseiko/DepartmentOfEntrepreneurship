@@ -6,10 +6,6 @@ import s from './Header.module.css'
 const Header = () => {
   return (
     <div>
-      <a href="https://department-of-entrepreneurship.vercel.app/">
-        Завантаження
-      </a>
-
       <a
         className={s.logo}
         href="http://umsf.dp.ua/struktura/2021-03-09-08-36-26/kafedra-pidpryiemnytstva-ta-ekonomiky-pidpryiemstva"
@@ -19,8 +15,6 @@ const Header = () => {
           КАФЕДРА ПІДПРИЄМНИЦТВА, ТОРГІВЛІ ТА ЕКОНОМІКИ ПІДПРИЄМСТВА
         </h2>
       </a>
-
-      <p>Тема 1. Предмет і зміст курсу "Економіка підприємства"</p>
     </div>
   );
 }

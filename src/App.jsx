@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import pingv from '/vite.svg'
 import './App.css'
 import Header from './components/Header/Header'
+import Page_1 from './components/Page_1/Page_1'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <Header />
+      <Page_1 />
      
     </>
   );
