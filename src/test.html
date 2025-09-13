@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Тест: Чи здатен ти бути бізнесменом?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background: #f4f6f8;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .question {
+      margin-bottom: 20px;
+      padding: 15px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    #result {
+      margin-top: 20px;
+      padding: 15px;
+      background: #d1f7d6;
+      border: 2px solid #2ecc71;
+      border-radius: 10px;
+      font-weight: bold;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Тест: Чи здатен ти бути бізнесменом?</h1>
+
+  <form id="quizForm">
+    <div class="question">
+      <p>1. Уяви, що твій партнер по бізнесу не виконав обіцянку. Твої дії:</p>
+      <label><input type="radio" name="q1" value="1"> Вирішиш проблему сам і зробиш висновки</label><br>
+      <label><input type="radio" name="q1" value="0"> Почнеш звинувачувати його перед усіма</label><br>
+      <label><input type="radio" name="q1" value="0"> Залишиш все як є</label>
+    </div>
+
+    <div class="question">
+      <p>2. Як ти ставишся до ризикованих рішень?</p>
+      <label><input type="radio" name="q2" value="1"> Ризик — це можливість, але він має бути обґрунтованим</label><br>
+      <label><input type="radio" name="q2" value="0"> Уникаю ризику будь-якою ціною</label><br>
+      <label><input type="radio" name="q2" value="0"> Ризикую без роздумів</label>
+    </div>
+
+    <div class="question">
+      <p>3. Що головне для тебе у власній справі?</p>
+      <label><input type="radio" name="q3" value="1"> Свобода та розвиток</label><br>
+      <label><input type="radio" name="q3" value="0"> Тільки гроші</label><br>
+      <label><input type="radio" name="q3" value="0"> Легка робота без стресу</label>
+    </div>
+
+    <div class="question">
+      <p>4. Отримав прибуток у 1000$. Що робиш?</p>
+      <label><input type="radio" name="q4" value="1"> Частину інвестуєш у розвиток бізнесу</label><br>
+      <label><input type="radio" name="q4" value="0"> Витрачаєш одразу на задоволення</label><br>
+      <label><input type="radio" name="q4" value="0"> Ховаєш під матрац</label>
+    </div>
+
+    <div class="question">
+      <p>5. Що для тебе невдача?</p>
+      <label><input type="radio" name="q5" value="1"> Урок, з якого треба зробити висновки</label><br>
+      <label><input type="radio" name="q5" value="0"> Кінець усім зусиллям</label><br>
+      <label><input type="radio" name="q5" value="0"> Причина все кинути</label>
+    </div>
+
+    <div class="question">
+      <p>6. Коли потрібно домовитися з незнайомою людиною, ти:</p>
+      <label><input type="radio" name="q6" value="1"> Шукаєш взаємовигідні рішення</label><br>
+      <label><input type="radio" name="q6" value="0"> Наполягаєш тільки на своєму</label><br>
+      <label><input type="radio" name="q6" value="0"> Уникаєш розмови</label>
+    </div>
+
+    <div class="question">
+      <p>7. Як ти ставишся до планів?</p>
+      <label><input type="radio" name="q7" value="1"> Планую, але залишаю місце для гнучкості</label><br>
+      <label><input type="radio" name="q7" value="0"> Не планую взагалі</label><br>
+      <label><input type="radio" name="q7" value="0"> Складаю ідеальний план і не відхиляюсь від нього</label>
+    </div>
+
+    <div class="question">
+      <p>8. Як ти працюєш у команді?</p>
+      <label><input type="radio" name="q8" value="1"> Береш на себе ініціативу й відповідальність</label><br>
+      <label><input type="radio" name="q8" value="0"> Чекаєш, коли хтось скаже, що робити</label><br>
+      <label><input type="radio" name="q8" value="0"> Уникаєш командної роботи</label>
+    </div>
+
+    <div class="question">
+      <p>9. Як ти ставишся до витрат?</p>
+      <label><input type="radio" name="q9" value="1"> Розглядаєш кожну витрату як інвестицію чи витрату на задоволення</label><br>
+      <label><input type="radio" name="q9" value="0"> Витрачаєш без обмежень</label><br>
+      <label><input type="radio" name="q9" value="0"> Усе зберігаєш, нічого не витрачаєш</label>
+    </div>
+
+    <div class="question">
+      <p>10. Чи готовий ти вчитися новому постійно?</p>
+      <label><input type="radio" name="q10" value="1"> Так, це необхідно для росту бізнесу</label><br>
+      <label><input type="radio" name="q10" value="0"> Вчуся тільки тоді, коли змушений</label><br>
+      <label><input type="radio" name="q10" value="0"> Вважаю, що вже все знаю</label>
+    </div>
+
+    <button type="button" onclick="calculateResult()">Перевірити результат</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    function calculateResult() {
+      let score = 0;
+      const form = document.forms['quizForm'];
+      for (let i = 1; i <= 10; i++) {
+        const q = form['q' + i];
+        if (q.value === "") {
+          alert("Будь ласка, відповідай на всі питання.");
+          return;
+        }
+        score += parseInt(q.value || 0);
+      }
+
+      let resultText = "";
+      if (score >= 8) {
+        resultText = "🔥 Вітаю! У тебе є всі задатки успішного бізнесмена.";
+      } else if (score >= 5) {
+        resultText = "⚖️ Ти маєш потенціал, але варто розвивати навички та впевненість.";
+      } else {
+        resultText = "❌ Поки що бізнес — не твоя сильна сторона. Спробуй попрацювати над мисленням.";
+      }
+
+      document.getElementById('result').style.display = "block";
+      document.getElementById('result').innerText = `Твій результат: ${score}/10\n${resultText}`;
+    }
+  </script>
+
+</body>
+</html>

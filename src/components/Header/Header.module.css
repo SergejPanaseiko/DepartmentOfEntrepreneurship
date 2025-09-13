@@ -1,0 +1,29 @@
+h2{
+    color:blue;
+    display: block;
+}
+.logo{
+    display: flex;
+}
+img{
+    display: block;
+}
+.logo_pict{
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+}
+.header_logo_text{
+    width:100px;  
+    height: 50px; 
+    font-size: 1rem;
+    margin: 0;
+    margin-right: 20px;
+    font-family: "Abril+Fatface", sans-serif;
+}
+.header_logo_main{
+    display: flex;
+    margin: 0;
+    align-items: center;
+    font-family: "Abril+Fatface";
+}
