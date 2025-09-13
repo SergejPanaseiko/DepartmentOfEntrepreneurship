@@ -6,7 +6,9 @@ import s from './Header.module.css'
 const Header = () => {
   return (
     <div>
-      <a href="https://department-of-entrepreneurship.vercel.app/">Завантаження</a>
+      <a href="https://department-of-entrepreneurship.vercel.app/">
+        Завантаження
+      </a>
 
       <a
         className={s.logo}
@@ -18,8 +20,7 @@ const Header = () => {
         </h2>
       </a>
 
-      <p>Тема 1. </p>
-      
+      <p>Тема 1. Предмет і зміст курсу "Економіка підприємства"</p>
     </div>
   );
 }
