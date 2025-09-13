@@ -12,7 +12,7 @@ const Header = () => {
         className={s.logo}
         href="http://umsf.dp.ua/struktura/2021-03-09-08-36-26/kafedra-pidpryiemnytstva-ta-ekonomiky-pidpryiemstva"
       >
-        {/* <img src={pict1} alt="" className={s.logo_pict} /> */}
+        {<img src={pict1} alt="" className={s.logo_pict} />}
         <h2 className={s.header_logo_main}>
           КАФЕДРА ПІДПРИЄМНИЦТВА, ТОРГІВЛІ ТА ЕКОНОМІКИ ПІДПРИЄМСТВА
         </h2>
